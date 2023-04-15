@@ -9,6 +9,7 @@ import Main from './components/Main';
 import Home from './components/Home';
 import Love from './components/Love';
 import Adri from './Adri';
+import Shop from './components/Shop';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path:"/love",
         element:<Love></Love>
+      },
+      {
+        path:"/shop",
+        element:<Shop></Shop>
       },
       {
         path: "/adri",

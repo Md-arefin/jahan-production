@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         <>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 my-4  ">
                 <div className="flex-none">
                     <button className="btn btn-square btn-ghost">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -14,8 +14,8 @@ const Header = () => {
                 </div>
                 <div className="flex-none">
                     <div className="avatar">
-                        <div className="w-24 rounded-lg">
-                            <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        <div className="w-24 rounded-full">
+                            <img src="https://i.ibb.co/5YmSWpt/1681579360755.jpg" />
                         </div>
                     </div>
                 </div>
