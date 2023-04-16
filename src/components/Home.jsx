@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBowlFood, faDrumstickBite, faEgg, faUtensils } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
     return (
@@ -81,8 +83,9 @@ const Home = () => {
                 </div>
             </div>
             <div className='flex justify-center'>
-                <Link to='/shop' className="btn btn-active bg-red-500 text-black mx-auto border-none " >Buy Hash from your HashWala</Link>
+                <Link to='/shops' className="btn btn-active bg-red-500 text-black mx-auto border-none hover:bg-red-200" >Buy Hash from your HashWala</Link>
             </div>
+            <ToastContainer />
         </div>
     );
 };

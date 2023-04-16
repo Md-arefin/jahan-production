@@ -14,9 +14,9 @@ const Header = () => {
                 </div>
                 <div className="flex-none">
                     <div className="avatar">
-                        <div className="w-24 rounded-full">
+                        {/* <div className="w-24 rounded-full">
                             <img src="https://i.ibb.co/5YmSWpt/1681579360755.jpg" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

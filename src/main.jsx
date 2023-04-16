@@ -9,7 +9,7 @@ import Main from './components/Main';
 import Home from './components/Home';
 import Love from './components/Love';
 import Adri from './Adri';
-import Shop from './components/Shop';
+import Shops from './components/Shops';
 
 const router = createBrowserRouter([
   {
@@ -25,8 +25,9 @@ const router = createBrowserRouter([
         element:<Love></Love>
       },
       {
-        path:"/shop",
-        element:<Shop></Shop>
+        path:"/shops",
+        element:<Shops></Shops>,
+        loader: () => fetch('/duck.json')
       },
       {
         path: "/adri",
