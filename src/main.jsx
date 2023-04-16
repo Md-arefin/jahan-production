@@ -21,10 +21,6 @@ const router = createBrowserRouter([
         element:<Home></Home>,
       },
       {
-        path:"/love",
-        element:<Love></Love>
-      },
-      {
         path:"/shops",
         element:<Shops></Shops>,
         loader: () => fetch('/duck.json')

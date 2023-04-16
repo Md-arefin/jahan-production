@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { toast } from 'react-toastify';
+import { ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Shop = ({ duck }) => {
@@ -48,6 +48,7 @@ const Shop = ({ duck }) => {
                 <button onClick={handleToast}>Buy Your duck</button>
                 <FontAwesomeIcon icon={faShoppingCart} />
             </div>
+            <ToastContainer />
         </div>
     );
 };
