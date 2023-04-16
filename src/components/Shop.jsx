@@ -1,7 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { ToastContainer,toast } from 'react-toastify';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Shop = ({ duck }) => {
@@ -9,9 +10,8 @@ const Shop = ({ duck }) => {
 
     const { description, food, image, location, name, price } = duck;
 
-    const handleToast = () =>{
-  toast("quack quack quack!!! ");
-         console.log("notify")
+    const handleToast = () => {
+        toast("I Love you Adri ❤️❤️❤️❤️");
     }
 
     return (
@@ -32,7 +32,8 @@ const Shop = ({ duck }) => {
             <div>
                 <span className='text-xl font-bold'>Food: </span>
                 {
-                    food.map(fd => <li
+                    food.map((fd, i) => <li
+                    key={i}
                     >{fd}</li>)
                 }
             </div>
@@ -44,11 +45,10 @@ const Shop = ({ duck }) => {
             <p className='my-1 text-lg'>
                 <span className='font-bold'>Price: $</span>{price}.
             </p>
-            <div  className='bg-red-600 rounded-lg px-5 py-2 flex justify-between items-center text-lg font-bold my-1 relative bottom-auto'>
-                <button onClick={handleToast}>Buy Your duck</button>
+            <div onClick={handleToast} className='bg-red-600 rounded-lg px-5 py-2 flex justify-between items-center text-lg font-bold my-1 relative bottom-auto'>
+                <button >Buy Your duck</button>
                 <FontAwesomeIcon icon={faShoppingCart} />
             </div>
-            <ToastContainer />
         </div>
     );
 };
