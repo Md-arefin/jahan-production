@@ -10,13 +10,13 @@ const Header = () => {
                     </button>
                 </div>
                 <div className="flex-1">
-                    <a className="btn btn-ghost normal-case text-xl">Adri's Farm House</a>
+                    <a className="btn btn-ghost normal-case text-xl  text-red-400">Adri's Farm House</a>
                 </div>
                 <div className="flex-none">
                     <div className="avatar">
-                        {/* <div className="w-24 rounded-full">
+                        <div className="w-20 rounded-full">
                             <img src="https://i.ibb.co/5YmSWpt/1681579360755.jpg" />
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>

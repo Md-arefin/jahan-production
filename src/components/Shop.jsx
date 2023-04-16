@@ -11,7 +11,7 @@ const Shop = ({ duck }) => {
     const { description, food, image, location, name, price } = duck;
 
     const handleToast = () => {
-        toast("I Love you Adri ❤️❤️❤️❤️");
+        toast("❤️❤️ I Love you Adri ❤️❤️😘😘😘  ");
     }
 
     return (
