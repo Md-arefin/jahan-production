@@ -9,6 +9,7 @@ import Main from './components/Main';
 import Home from './components/Home';
 import Adri from './Adri';
 import Shops from './components/Shops';
+import About from './components/About';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/adri",
         element: <Adri></Adri>
+      },
+      {
+        path: "/about",
+        element: <About></About>
       },
     ]
   },

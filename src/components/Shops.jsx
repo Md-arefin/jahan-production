@@ -17,7 +17,7 @@ const Shops = () => {
                 }
 
                 <div className='flex justify-center'>
-                    <Link to='/adri' className="btn btn-active bg-red-500 text-black mx-auto border-none hover:bg-red-200 text-lg font-bold mb-10" >Haswalar Moner kotha</Link>
+                    <Link to='/adri' className="btn btn-active bg-red-500 text-black mx-auto border-none hover:bg-red-200 text-lg font-bold mb-10" >Only for Adri</Link>
                 </div>
             </div>
         </div>
