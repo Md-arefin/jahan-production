@@ -1,12 +1,21 @@
 import React from 'react';
-
-
-
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import { Link } from 'react-router-dom';
 
 const Adri = () => {
 
     return (
         <div>
+            <div className=' m-3 px-3 rounded-[20px]'>
+                <Player
+                    autoplay
+                    loop
+                    src="https://assets10.lottiefiles.com/packages/lf20_evy35j9e.json"
+                    style={{ height: '300px', width: '300px' }}
+                >
+                    <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+                </Player>
+            </div>
             <div className="carousel w-[90%] mx-auto rounded-[20px]">
                 <div id="slide1" className="carousel-item relative w-full ">
                     <img src="https://i.ibb.co/5YmSWpt/1681579360755.jpg" className="w-full" />
@@ -132,9 +141,23 @@ const Adri = () => {
                     And make each other's hearts complete.
                 </p>
             </div>
-        </div>
+            <div className='bg-green-300 m-3 px-3 rounded-[20px]'>
+                <Player
+                    autoplay
+                    loop
+                    src="https://assets1.lottiefiles.com/packages/lf20_ApdyhRfyvw.json"
+                    style={{ height: '300px', width: '300px' }}
+                >
+                    <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+                </Player>
+            </div>
+            <div className='flex justify-center'>
+                <Link to='/about' className="btn btn-active bg-red-500 text-black mx-auto border-none hover:bg-red-400 text-lg font-bold  my-10" >About Adri's Farm House</Link>
+            </div>
+        </div >
 
     );
 };
 
+// 
 export default Adri;

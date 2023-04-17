@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Adri from './Adri';
 import Shops from './components/Shops';
 import About from './components/About';
+import Login from './components/Login';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
       },
     ]
   },
