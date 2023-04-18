@@ -18,7 +18,7 @@ const Home = () => {
             <div>
                 <h2 className='font-bold'>
                     <span className='text-2xl text-red-400 font-bold'>Ms. Adri (Pagli) </span>
-                    why should you buy our duck?</h2>
+                    why should you buy my duck?</h2>
 
                 <p className=''>
                     <span className='text-xl text-red-400'>Tomar Hashwalar theke jodi tumi hash na neo taile ke nibo!!! </span>
