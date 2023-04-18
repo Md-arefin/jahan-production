@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from './AuthProvider';
 
 const Header = () => {
+
+    const {user} = useContext(AuthContext)
+    console.log(user);
     return (
         <>
             <div className="navbar bg-base-100 my-4  ">
@@ -14,9 +18,12 @@ const Header = () => {
                 </div>
                 <div className="flex-none">
                     <div className="avatar">
-                        <div className="w-20 rounded-full">
+                        {/* <div className="w-20 rounded-full">
                             <img src="https://i.ibb.co/5YmSWpt/1681579360755.jpg" />
-                        </div>
+                        </div> */}
+                      {
+                        user && <span>{user.displayName}</span>
+                      }              
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ const About = () => {
                     <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
                 </Player>
             </div>
-
+            
             <div>
                 <h2 className='text-3xl text-red-400 font-semibold text-center'>About Adri's Farm House</h2>
 
@@ -92,7 +92,7 @@ const About = () => {
                         </Link>
                     </div>
 
-                    <div className='flex gap-12  items-center my-5'>
+                    {/* <div className='flex gap-12  items-center my-5'>
                         <div>
                             <img className='w-[65px] rounded-full' src="https://i.ibb.co/5YmSWpt/1681579360755.jpg" alt="" />
                         </div>
@@ -100,7 +100,7 @@ const About = () => {
                         <Link to='https://www.facebook.com/profile.php?id=100091519203342'>
                             <img className='w-[25px]' src="https://i.ibb.co/6HN80ZH/vecteezy-facebook-logo-png-facebook-icon-transparentdfbgr-png-18930427-322.png" alt="" />
                         </Link>
-                    </div>
+                    </div> */}
                     <div className='mb-10 flex items-center justify-center gap-10 my-5'>
                         <div className='w-[50%] h-50' >
                             <img className='w-full h-60 rounded-lg' src="https://i.ibb.co/yYGKQbx/1681802025647.jpg" alt="" />

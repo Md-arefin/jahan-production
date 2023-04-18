@@ -11,6 +11,7 @@ import Adri from './Adri';
 import Shops from './components/Shops';
 import About from './components/About';
 import Login from './components/Login';
+import AuthProvider from './components/AuthProvider';
 
 const router = createBrowserRouter([
   {
@@ -18,12 +19,12 @@ const router = createBrowserRouter([
     element: <Main></Main>,
     children: [
       {
-        path:"/",
-        element:<Home></Home>,
+        path: "/",
+        element: <Home></Home>,
       },
       {
-        path:"/shops",
-        element:<Shops></Shops>,
+        path: "/shops",
+        element: <Shops></Shops>,
         loader: () => fetch('/duck.json')
       },
       {
@@ -44,6 +45,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

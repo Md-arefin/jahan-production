@@ -1,11 +1,23 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBowlFood, faDrumstickBite, faEgg, faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { faBowlFood, faDrumstickBite, faEgg, faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
         <div className='p-5'>
+            <div className=' m-3 px-3 rounded-[20px]'>
+                <Player
+                    autoplay
+                    loop
+                    src="https://assets3.lottiefiles.com/packages/lf20_1t8na1gy.json"
+                    style={{ height: '300px', width: '300px' }}
+                >
+                    <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+                </Player>
+            </div>
+            <h2 className='text-2xl text-red-400 font-semibold text-center my-8'>Welcome to Adri's Farm House</h2>
             <div className=' md:flex gap-10'>
                 <div className='md:w-[50%]'>
                     <h1 className='text-3xl '>Quack Your Way to Deliciousness The Ultimate Destination for <br /> <span className='text-5xl text-red-400 font-bold '>Premium Duck Products</span></h1>
@@ -27,6 +39,16 @@ const Home = () => {
                 </p>
             </div>
             <div>
+                <div className=' m-3 px-3 rounded-[20px]'>
+                    <Player
+                        autoplay
+                        loop
+                        src="https://assets2.lottiefiles.com/datafiles/d2r7Sp2fKIkHuDb/data.json"
+                        style={{ height: '300px', width: '300px' }}
+                    >
+                        <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+                    </Player>
+                </div>
                 <h1 className='text-3xl text-red-400 text-center my-2'>Hasher Categories</h1>
 
                 <div>
