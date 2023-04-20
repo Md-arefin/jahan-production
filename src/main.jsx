@@ -12,6 +12,7 @@ import Shops from './components/Shops';
 import About from './components/About';
 import Login from './components/Login';
 import AuthProvider from './components/AuthProvider';
+import SignUp from './components/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>
+      },
+      {
+        path: "/signup",
+        element: <SignUp></SignUp>
       },
     ]
   },

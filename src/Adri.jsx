@@ -7,6 +7,7 @@ const Adri = () => {
     return (
         <div>
             <div className=' m-3 px-3 rounded-[20px]'>
+                <h1 className='text-center text-red-400 text-2xl font-bold'>If you want we can live like them. 😘</h1>
                 <Player
                     autoplay
                     loop
@@ -94,9 +95,23 @@ const Adri = () => {
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
+                <div id="slide12" className="carousel-item relative w-full">
+                    <img src="https://i.ibb.co/bdy04K0/FB-IMG-1635464472173.jpg" className="w-full" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide11" className="btn btn-circle">❮</a>
+                        <a href="#slide13" className="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide13" className="carousel-item relative w-full">
+                    <img src="https://i.ibb.co/HPZxhsG/received-2105893386265953.jpg" className="w-full" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide12" className="btn btn-circle">❮</a>
+                        <a href="#slide1" className="btn btn-circle">❯</a>
+                    </div>
+                </div>
             </div>
             <div className='m-3 px-3'>
-                <h2 className='m-3 px-3 text-3xl font-semibold text-red-400 text-center'>My Hash to my Adri</h2>
+                <h2 className='m-3 px-3 text-3xl font-semibold text-red-400 text-center'>My ❤️ to my Adri</h2>
                 <br />
                 <p>
                     <span className='text-xl font-semibold text-red-400 text-center'>My dearest Adri,</span>

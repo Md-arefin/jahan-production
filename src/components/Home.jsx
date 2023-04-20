@@ -103,7 +103,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='flex justify-center'>
-                <Link to='/shops' className="btn btn-active bg-red-500 text-black mx-auto border-none hover:bg-red-200" >Buy Hash from your HashWala</Link>
+                <Link to='/shops' className="btn btn-active bg-red-500 text-black mx-auto border-none font-semibold hover:bg-red-200" >Buy Hash from your HashWala 😘</Link>
             </div>
         </div>
     );
